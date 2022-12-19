@@ -36,4 +36,6 @@ pipeline:
                       echo hi
                       echo hi
                       ruby -v
+                      gem install bundler
+                      bundle install
                       bundle exec cucumber
