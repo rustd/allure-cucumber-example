@@ -31,3 +31,4 @@ jobs:
           name: allure-reports
           path: report/allure-results
           if-no-files-found: error
+
