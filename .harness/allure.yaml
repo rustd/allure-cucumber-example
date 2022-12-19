@@ -35,3 +35,4 @@ pipeline:
                     command: |-
                       echo hi
                       echo hi
+                      bundle exec cucumber
