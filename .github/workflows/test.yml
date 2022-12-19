@@ -52,8 +52,8 @@ jobs:
         if: always()
         uses: Sibz/github-status-action@v1
         with: 
-            authToken: ${{secrets.GITHUB_TOKEN}}
+           # authToken: ${{secrets.GITHUB_TOKEN}}
             context: 'Test Results Link'
             state: 'success'
-            sha: ${{ github.sha }}
+           # sha: ${{ github.sha }}
             target_url: http://${{ secrets.AWS_S3_BUCKET }}.s3-website-${{ env.AWS_REGION }}.amazonaws.com/${{ github.run_number }}/index.html          
