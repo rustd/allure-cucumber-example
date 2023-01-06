@@ -27,6 +27,14 @@ pipeline:
           execution:
             steps:
               - step:
+                  identifier: install_ruby
+                  name: install ruby
+                  type: Action
+                  spec:
+                    uses: shubham149/setup-ruby@v1
+                    with:
+                      ruby-version: 2.7.2
+              - step:
                   type: Run
                   name: run
                   identifier: run
